@@ -167,8 +167,8 @@ table{
     border-radius: .2em;
 }
 
-#update_user .form-group .radio-inline,
-#add_user .form-group .radio-inline{
+#update_user .form-group .radio,
+#add_user .form-group .radio{
     margin: 1em 2em;
 }
 
