@@ -167,8 +167,8 @@ table{
     border-radius: .2em;
 }
 
-#update_user .form-group .radio,
-#add_user .form-group .radio{
+#update_user .form-group .radio-inline,
+#add_user .form-group .radio-inline{
     margin: 1em 2em;
 }
 
@@ -178,7 +178,7 @@ table{
     opacity: 0;
 }
 
-.radio input[type='radio'] + .radio-label:before{
+.radio-inline input[type='radio'] + .radio-label:before{
     content: "";
     background: var(--border-btn);
     border-radius: 100%;
