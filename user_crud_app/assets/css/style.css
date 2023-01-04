@@ -178,7 +178,7 @@ table{
     opacity: 0;
 }
 
-.radio-inline input[type='radio'] + .radio-label:before{
+.radio input[type='radio'] + .radio-label:before{
     content: "";
     background: var(--border-btn);
     border-radius: 100%;
