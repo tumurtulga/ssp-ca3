@@ -12,9 +12,8 @@ $("#update_user").submit(function (event) {
         data[n['name']] = n['value']
     })
 
-
     var request = {
-        "url": `http://localhost:3000/api/users/${data.id}`,
+        "url": `https://3000-tumurtulga-sspca3-ald6fgicwyn.ws-eu81.gitpod.io/api/users/${data.id}`,
         "method": "PUT",
         "data": data
     }
@@ -31,7 +30,7 @@ if (window.location.pathname == "/") {
         var id = $(this).attr("data-id")
 
         var request = {
-            "url": `http://localhost:3000/api/users/${id}`,
+            "url": `https://3000-tumurtulga-sspca3-ald6fgicwyn.ws-eu81.gitpod.io/api/users/${id}`,
             "method": "DELETE"
         }
 
