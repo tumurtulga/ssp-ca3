@@ -11,7 +11,9 @@ exports.create = (req,res)=>{
     // new user
     const user = new Userdb({
         name : req.body.name,
+        role : req.body.role,
         email : req.body.email,
+        mobile : req.body.mobile,
         gender: req.body.gender,
         status : req.body.status
     })
@@ -46,7 +48,7 @@ exports.find = (req, res)=>{
                 }
             })
             .catch(err =>{
-                res.status(500).send({ message: "Erro retrieving user with id " + id})
+                res.status(500).send({ message: "Error retrieving user with id " + id})
             })
 
     }else{
@@ -55,7 +57,7 @@ exports.find = (req, res)=>{
                 res.send(user)
             })
             .catch(err => {
-                res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
+                res.status(500).send({ message : err.message || "Error occurred while retriving user information" })
             })
     }
 

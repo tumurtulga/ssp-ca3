@@ -5,10 +5,15 @@ var schema = new mongoose.Schema({
         type : String,
         required: true
     },
+    role : String,
     email : {
         type: String,
         required: true,
         unique: true
+    },
+    mobile : {
+        type: String,
+        required: true
     },
     gender : String,
     status : String
