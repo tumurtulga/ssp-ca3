@@ -13,7 +13,6 @@ var schema = new mongoose.Schema({
     },
     mobile : {
         type: String,
-        required: true
     },
     gender : String,
     status : String
